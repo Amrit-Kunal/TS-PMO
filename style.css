@@ -1,58 +1,114 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background: #333;
     color: white;
-    padding: 40px 0;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-h1 {
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
-    font-size: 2.5em;
-}
-
-p {
-    font-size: 1.2em;
-}
-
-main {
-    padding: 40px;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-ul {
-    list-style-type: none;
     padding: 0;
 }
 
-ul li {
-    margin: 10px 0;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-a {
-    color: #007BFF;
+nav ul li a {
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology,professional') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-footer {
-    background-color: #333;
+.hero .btn {
+    background: #007BFF;
     color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    margin-top: 10px;
     padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-card .btn:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
 }

@@ -3,55 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TS-PMO</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(120deg, #2980b9, #6dd5fa);
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: white;
-            color: #2980b9;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #ddd;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 14px;
-        }
-    </style>
+    <title>TS-PMO - Your Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>Welcome to TS-PMO</header>
-    <div class="container">
-        <h2>Your Project Description Here</h2>
-        <p>This is a simple GitHub Pages website for the TS-PMO project.</p>
-        <a href="https://github.com/Amrit-Kunal/TS-PMO" class="btn">View on GitHub</a>
-    </div>
-    <footer>© 2025 TS-PMO | Created by Amrit-Kunal</footer>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>TS-PMO</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to TS-PMO</h2>
+            <p>Professional project management made simple.</p>
+            <a href="#features" class="btn">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About TS-PMO</h2>
+        <p>TS-PMO is a cutting-edge tool designed to streamline project management and improve workflow efficiency.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <h3>✔️ Easy Task Management</h3>
+                <p>Organize tasks effortlessly with an intuitive interface.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Analytics Dashboard</h3>
+                <p>Track progress with real-time data and reports.</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Secure & Reliable</h3>
+                <p>Your data is safe with industry-standard encryption.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>GitHub: <a href="https://github.com/Amrit-Kunal/TS-PMO" target="_blank">View Repository</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 TS-PMO | Created by Amrit-Kunal</p>
+    </footer>
+
 </body>
 </html>

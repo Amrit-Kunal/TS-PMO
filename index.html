@@ -3,41 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional GitHub Page</title>
+    <title>Your Professional Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Professional Website</h1>
-        <p>Minimal. Elegant. Effective.</p>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>I'm a software developer passionate about building clean and efficient code.</p>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My Professional Website</h2>
+            <p>Building clean, modern, and effective solutions.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/yourusername/project1">Project One</a></li>
-                <li><a href="https://github.com/yourusername/project2">Project Two</a></li>
-                <li><a href="https://github.com/yourusername/project3">Project Three</a></li>
-            </ul>
-        </section>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I'm a dedicated professional with expertise in modern web development and software engineering.</p>
+    </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-        </section>
-    </main>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A description of the project.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>A description of the project.</p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

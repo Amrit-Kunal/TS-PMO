@@ -8,11 +8,9 @@
 
 /* Background */
 body {
-    background: url('https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fbo3ckihdoks51.png%3Fauto%3Dwebp%26s%3D2c643407a7e6f4f7711a4e876e883d6b2a2a283a') no-repeat center center/cover;
+    background: url('images/Green Photographic Environment Charity Bio-Link Website_20250316_131511_0000.png') 
+                no-repeat center center/cover;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Centered Glass Box */

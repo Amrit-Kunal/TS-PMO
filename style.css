@@ -1,114 +1,127 @@
-/* General Styles */
-body {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Header */
-header {
-    background: #333;
-    color: white;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?technology,professional') no-repeat center center/cover;
+/* Background */
+body {
+    background: url('https://source.unsplash.com/1600x900/?leaves,green') no-repeat center center/cover;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
+    align-items: center;
+}
+
+/* Centered Glass Box */
+.glass-box {
+    width: 350px;
+    padding: 30px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.hero .btn {
-    background: #007BFF;
+/* Text Styles */
+h1 {
     color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtext {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.message {
+    color: white;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/* Button */
+.notify-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
     padding: 10px 20px;
-    text-decoration: none;
+    width: 100%;
     border-radius: 5px;
-    display: inline-block;
-    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
-.hero .btn:hover {
-    background: #0056b3;
+.notify-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Sections */
-section {
-    padding: 60px 0;
-}
-
-.project-grid {
+/* Background */
+body {
+    background: url('https://source.unsplash.com/1600x900/?leaves,green') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
-.project-card {
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    width: 300px;
-}
-
-.project-card .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    background: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.project-card .btn:hover {
-    background: #555;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    padding: 15px 0;
+/* Centered Glass Box */
+.glass-box {
+    width: 350px;
+    padding: 30px;
     text-align: center;
-    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styles */
+h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtext {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.message {
+    color: white;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/* Button */
+.notify-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.notify-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
 }

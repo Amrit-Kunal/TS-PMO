@@ -13,15 +13,19 @@ body {
     height: 100vh;
 }
 
-/* Centered Glass Box */
-.glass-box {
-    width: 350px;
-    padding: 30px;
+/* Center the main container */
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust as needed */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); 
+/* Semi-transparent dark background */
+    border-radius: 10px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 /* Text Styles */

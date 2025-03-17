@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("notifyBtn").addEventListener("click", function () {
         let sound = document.getElementById("notifySound");
 
-        // Play the audio
-        sound.play();
-
-        // Change button text to 🤡
-        this.innerHTML = "🤡";
+        // Try to play the audio
+        sound.play().then(() => {
+            this.innerHTML = "🤡"; // Change button text
+        }).catch(error => {
+            console.log("Audio Play Error:", error);
+        });
     });
 });

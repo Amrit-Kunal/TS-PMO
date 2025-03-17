@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("notifyBtn").addEventListener("click", function () {
-        let sound = document.getElementById("notifySound");
+        let video = document.getElementById("myVideo");
 
-        // Try to play the audio
-        sound.play().then(() => {
-            this.innerHTML = "🤡"; // Change button text
-        }).catch(error => {
-            console.log("Audio Play Error:", error);
-        });
+        // Show the video
+        video.style.display = "block";
+
+        // Play the video
+        video.play();
+
+        // Change button text to 🤡
+        this.innerHTML = "🤡 Playing...";
     });
 });
